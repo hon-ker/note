@@ -13,10 +13,10 @@
               <PageNav v-bind="{ sidebarItems }" />
           </div>
 
-          <div class="toc-container-sidebar" ref="tocc">
-              <div class="pos-box">
+          <div  class="toc-container-sidebar" ref="tocc">
+              <div  class="pos-box">
                   <div class="icon-arrow"></div>
-                  <div class="scroll-box" style="max-height:86vh">
+                  <div class="scroll-box" v-if="pageSidebarItems[0].children.length > 0">
                       <div style="font-weight:bold;">{{pageSidebarItems[0].title}}</div>
                       <hr/>
                       <div class="toc-box">
@@ -53,12 +53,16 @@ export default {
     display none !important
   .content
     display block !important
+  .page-edit .last-updated 
+    float none
 
 @media (max-width: $MQMobile)
   .toc-container-sidebar
     display none
   .content
     display block !important
+
+
 
 .content-page
   position relative

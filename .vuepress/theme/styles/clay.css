@@ -92,3 +92,11 @@ a{
 .arrow.down{
     transform: rotate(0deg);
 }
+
+.page-edit .last-updated {
+    font-size: 1em ;
+}
+
+.icon.outbound {
+    display: none;
+}
