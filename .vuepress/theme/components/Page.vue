@@ -52,9 +52,8 @@ export default {
   .toc-container-sidebar
     display none !important
   .content
-    display block !important
-  .page-edit .last-updated 
-    float none
+    display block
+
 
 @media (max-width: $MQMobile)
   .toc-container-sidebar
