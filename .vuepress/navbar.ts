@@ -1,4 +1,4 @@
-import {NavItem} from "vuepress/config";
+import { NavItem } from "vuepress/config";
 
 export default [
     {
@@ -9,5 +9,4 @@ export default [
         text: "内网渗透",
         link: "/内网渗透/",
     }
-
 ] as NavItem[];
